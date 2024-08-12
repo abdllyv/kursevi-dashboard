@@ -1,0 +1,21 @@
+// Reset File
+@import "./base";
+
+// Components
+@import"./component/header";
+@import"./component/main-side-bar";
+@import"./component/detail-tab";
+
+// Course Conferance Detail Section
+ @import "./page/course-conferance-detail/main-tab-detail";
+ @import "./page/course-conferance-detail/information-tab-detail";
+ @import "./page/course-conferance-detail/speaker-tab-detail";
+ @import "./page/course-conferance-detail/diary-tab-detail";
+ @import "./page/course-conferance-detail/participant-tab-detail";
+ @import "./page/course-conferance-detail/price-tab-detail";
+
+
+// Pages
+@import"./page/course-conferance";
+@import"./page/dictionary-speaker";
+@import"./page/login";

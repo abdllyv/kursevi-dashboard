@@ -1,0 +1,14 @@
+@import "../../mixins";
+.speaker-body {
+  .container {
+    .form-group-select {
+      @include form-group-select();
+    }
+    .speaker-table {
+      @include table-info();
+    }
+    .pagination {
+      @include pagination();
+    }
+  }
+}

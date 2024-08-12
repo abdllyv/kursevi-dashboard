@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <h2 class="caption">Diary</h2>
+          <button class="user-info">
+            <img class="user" src="./assets/img/icon/user.svg" alt="user" />
+            Admin
+            <img
+              class="icon"
+              src="./assets/img/icon/log-out.svg"
+              alt="logout"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main SideBar -->
+    <aside class="main-sidebar">
+      <a class="logo">
+        <img src="./assets/img/Kurs evi logo.svg" alt="logo" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link">İştirakçılar</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Konfrans</a>
+        </li>
+        <li class="nav-item">
+          <a class="link active" href="">Kurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Partnyor</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Spiker</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Dictionary</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Main SideBar -->
+
+    <main>
+      <!-- Start Tab Section -->
+      <section class="detail-tab">
+        <div class="container">
+          <ul class="tab-list">
+            <li class="tab-item"><a class="tab" href="">Main</a></li>
+            <li class="tab-item"><a class="tab" href="">İnformation</a></li>
+            <li class="tab-item"><a class="tab" href="">Speaker</a></li>
+            <li class="tab-item"><a class="tab active" href="">Diary</a></li>
+            <li class="tab-item"><a class="tab" href="">Participants</a></li>
+            <li class="tab-item"><a class="tab" href="">Price</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Tab Section -->
+
+      <!-- Start Download Pdf Area -->
+      <section class="pdf-area">
+        <div class="container">
+          <div class="row">
+            <div class="form-group-img">
+              <label class="special-caption" for="file-input-1">Az</label>
+              <label class="file-label" for="file-input-1">
+                <div class="left-side">
+                  <div class="img-content">
+                    <img
+                      class="img"
+                      src="./assets/img/icon/download.svg"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h4 class="caption">PDF for diary</h4>
+                  <p class="alert-text">Just downland pdf</p>
+                </div>
+                <div class="button-area">
+                  <div class="select">Select</div>
+                  <!-- <button class="delete" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/delete.svg" alt="delete"></button> -->
+                  <!-- <button class="view" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/view.svg" alt="view"></button> -->
+                </div>
+              </label>
+              <input type="file" id="file-input-1" name="file-input" />
+            </div>
+            <div class="form-group-img">
+              <label class="special-caption" for="file-input-2">En</label>
+              <label class="file-label" for="file-input-2">
+                <div class="left-side">
+                  <div class="img-content">
+                    <img
+                      class="img"
+                      src="./assets/img/icon/download.svg"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h4 class="caption">PDF for diary</h4>
+                  <p class="alert-text">Just downland pdf</p>
+                </div>
+                <div class="button-area">
+                  <div class="select">Select</div>
+                  <!-- <button class="delete" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/delete.svg" alt="delete"></button> -->
+                  <!-- <button class="view" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/view.svg" alt="view"></button> -->
+                </div>
+              </label>
+              <input type="file" id="file-input-2" name="file-input" />
+            </div>
+            <div class="form-group-img">
+              <label class="special-caption" for="file-input-3">Ru</label>
+              <label class="file-label" for="file-input-3">
+                <div class="left-side">
+                  <div class="img-content">
+                    <img
+                      class="img"
+                      src="./assets/img/icon/download.svg"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h4 class="caption">Downloaded</h4>
+                  <p class="alert-text">text.pdf</p>
+                </div>
+                <div class="button-area">
+                  <div class="select">Change</div>
+                  <button
+                    class="delete"
+                    onclick="event.preventDefault(); event.stopPropagation();"
+                  >
+                    <img src="./assets/img/icon/delete.svg" alt="delete" />
+                  </button>
+                  <button
+                    class="view"
+                    onclick="event.preventDefault(); event.stopPropagation();"
+                  >
+                    <img src="./assets/img/icon/view.svg" alt="view" />
+                  </button>
+                </div>
+              </label>
+              <input type="file" id="file-input-3" name="file-input" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Download Pdf Area -->
+
+      <!-- Start Diary Tab Detail -->
+      <section class="course-conferance-body">
+        <div class="container">
+          <button class="add">Add diary</button>
+          <div class="table-info">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="first">ID</th>
+                  <th class="second">Date</th>
+                  <th class="edit">Edit && Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="first">12</td>
+                  <td class="second">12-08-24 08:00</td>
+
+                  <td class="edit">
+                    <div class="btn-area">
+                      <button>
+                        <img
+                          src="./assets/img/icon/trash-table.svg"
+                          alt="delete"
+                        />
+                      </button>
+                      <button>
+                        <img
+                          src="./assets/img/icon/edit-table.svg"
+                          alt="edit"
+                        />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- End Diary Tab Detail -->
+
+      <!-- Start Side Bar -->
+      <aside class="diary-sidebar scroll">
+        <div class="container">
+          <div class="head">
+            <div class="close">
+              <img src="./assets/img/icon/back-sidebar.svg" alt="back" />
+            </div>
+            <h3 class="title">Price</h3>
+          </div>
+          <form action="" class="body">
+            <div class="form-group">
+              <label for="">Date </label>
+              <input type="datetime-local" id="datetime" name="datetime" />
+            </div>
+            <!-- Start Inp Area -->
+            <div class="form-group">
+              <h6 class="special-caption">Az</h6>
+              <label for="">Title </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group-detail">
+              <label for=""> Description </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+            <div class="form-group">
+              <h6 class="special-caption">En</h6>
+              <label for="">Title </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group-detail">
+              <label for=""> Description </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+            <div class="form-group">
+              <h6 class="special-caption">Ru</h6>
+              <label for="">Title </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group-detail">
+              <label for=""> Description </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+
+            <!-- End Inp Area -->
+
+            <!-- Start Form Footer -->
+            <div class="sidebar-form-footer">
+              <button type="submit" class="save">Save</button>
+              <p class="error-text">error</p>
+            </div>
+            <!-- End Form Footer -->
+          </form>
+        </div>
+      </aside>
+      <!-- End Side Bar -->
+
+      <div class="overlay"></div>
+    </main>
+    <!-- My Js -->
+    <script src="./assets/js/detailDiaryTab.js"></script>
+    <!-- My Js -->
+  </body>
+</html>

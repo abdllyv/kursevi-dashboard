@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <h2 class="caption">Dictionary</h2>
+          <button class="user-info">
+            <img class="user" src="./assets/img/icon/user.svg" alt="user" />
+            Admin
+            <img
+              class="icon"
+              src="./assets/img/icon/log-out.svg"
+              alt="logout"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main SideBar -->
+    <aside class="main-sidebar">
+      <a class="logo">
+        <img src="./assets/img/Kurs evi logo.svg" alt="logo" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link">İştirakçılar</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Konfrans</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Kurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Partnyor</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Spiker</a>
+        </li>
+        <li class="nav-item">
+          <a class="link active" href="">Dictionary</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Main SideBar -->
+
+    <main>
+      <section class="dictionart-speaker-body">
+        <div class="container">
+          <div class="head">
+            <button class="add">Add a dictionary</button>
+            <form action="" class="search-area">
+              <input type="text" name="" id="" placeholder="Search" />
+            </form>
+          </div>
+          <div class="table-info">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="first">ID</th>
+                  <th class="second">Name</th>
+                  <th class="edit">Edit && Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="first">12</td>
+                  <td class="second">Name</td>
+
+                  <td class="edit">
+                    <div class="btn-area">
+                      <button>
+                        <img
+                          src="./assets/img/icon/trash-table.svg"
+                          alt="delete"
+                        />
+                      </button>
+                      <button>
+                        <img
+                          src="./assets/img/icon/edit-table.svg"
+                          alt="edit"
+                        />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <button class="btn prev" disabled>
+              <img
+                class="prev-icon"
+                src="./assets/img/icon/prev.svg"
+                alt="prev"
+              />
+            </button>
+            <button class="btn prev-number">1</button>
+            <button class="btn active">2</button>
+            <button class="btn next-number">3</button>
+
+            <button class="btn next">
+              <img
+                class="next-icon"
+                src="./assets/img/icon/next.svg"
+                alt="prev"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Add Side Bar -->
+      <aside class="dictionary-add-sidebar scroll">
+        <div class="container">
+          <div class="head">
+            <div class="close" id="participant-add-close">
+              <img src="./assets/img/icon/back-sidebar.svg" alt="back" />
+            </div>
+            <h3 class="title">Dictionary</h3>
+          </div>
+          <form action="" class="body">
+            <!-- Start Inp Area -->
+            <div class="form-group">
+              <label for="">Title </label>
+              <input class="inp" type="text" />
+            </div>
+            <!-- End Inp Area -->
+
+            <!-- Start Select Area -->
+
+            <div class="form-group-select">
+              <div class="select-label">Type</div>
+              <div class="select">
+                <span onclick="openSelect(event, 'type')" class="select-title"
+                  ><span class="text" id="select-first-text">Seç</span>
+                  <div class="icon">
+                    <img
+                      src="./assets/img/icon/arrow-down.svg"
+                      alt="open-close"
+                    />
+                  </div>
+                </span>
+                <ul class="select-list" id="type">
+                  <li class="select-item">Qeyri-tibb işçilər</li>
+                  <li class="select-item">-tibb işçilər</li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Select Area -->
+
+            <!-- Start Form Footer -->
+            <div class="sidebar-form-footer">
+              <button type="submit" class="save">Save</button>
+              <p class="error-text">error</p>
+            </div>
+            <!-- End Form Footer -->
+          </form>
+        </div>
+        <div class="sidebar-overlay"></div>
+      </aside>
+      <!-- End Add Side Bar -->
+
+      <div class="overlay"></div>
+    </main>
+    <!-- My JS -->
+    <script src="./assets/js/dictionary.js"></script>
+    <!-- My JS -->
+  </body>
+</html>

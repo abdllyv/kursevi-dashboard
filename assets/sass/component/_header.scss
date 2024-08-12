@@ -1,0 +1,36 @@
+.header {
+  padding: 24px 10px;
+  border-bottom: 1px solid #1c1c1c1a;
+
+  .container {
+    .row {
+      justify-content: space-between;
+      align-items: center;
+      .caption {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        color: #000000;
+      }
+      .user-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .user,
+        .icon {
+          width: 24px;
+          height: 24px;
+          object-fit: cover;
+        }
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #1c1c1c;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+}

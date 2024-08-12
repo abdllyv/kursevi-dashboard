@@ -1,0 +1,5 @@
+@import "../../mixins";
+.participant-add-sidebar,
+.participant-info-sidebar {
+  @include sidebar();
+}

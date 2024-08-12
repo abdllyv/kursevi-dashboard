@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <h2 class="caption">Price</h2>
+          <button class="user-info">
+            <img class="user" src="./assets/img/icon/user.svg" alt="user" />
+            Admin
+            <img
+              class="icon"
+              src="./assets/img/icon/log-out.svg"
+              alt="logout"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main SideBar -->
+    <aside class="main-sidebar">
+      <a class="logo">
+        <img src="./assets/img/Kurs evi logo.svg" alt="logo" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link">İştirakçılar</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Konfrans</a>
+        </li>
+        <li class="nav-item">
+          <a class="link active" href="">Kurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Partnyor</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Spiker</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Dictionary</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Main SideBar -->
+
+    <main>
+      <!-- Start Tab Section -->
+      <section class="detail-tab">
+        <div class="container">
+          <ul class="tab-list">
+            <li class="tab-item"><a class="tab" href="">Main</a></li>
+            <li class="tab-item"><a class="tab" href="">İnformation</a></li>
+            <li class="tab-item"><a class="tab" href="">Speaker</a></li>
+            <li class="tab-item"><a class="tab" href="">Diary</a></li>
+            <li class="tab-item"><a class="tab" href="">Participants</a></li>
+            <li class="tab-item"><a class="tab active" href="">Price</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Tab Section -->
+
+      <!-- Start Price Tab Detail -->
+      <section class="course-conferance-body">
+        <div class="container">
+          <button class="add">Add price</button>
+          <div class="table-info">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="first">ID</th>
+                  <th class="second">Price type</th>
+                  <th class="second">Price</th>
+                  <th class="edit">Edit && Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="first">12</td>
+                  <td class="second">Doctor</td>
+                  <td class="second">120</td>
+
+                  <td class="edit">
+                    <div class="btn-area">
+                      <button>
+                        <img
+                          src="./assets/img/icon/trash-table.svg"
+                          alt="delete"
+                        />
+                      </button>
+                      <button>
+                        <img
+                          src="./assets/img/icon/edit-table.svg"
+                          alt="edit"
+                        />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="first">12</td>
+                  <td class="second">Doctor</td>
+                  <td class="second">120</td>
+
+                  <td class="edit">
+                    <div class="btn-area">
+                      <button>
+                        <img
+                          src="./assets/img/icon/trash-table.svg"
+                          alt="delete"
+                        />
+                      </button>
+                      <button>
+                        <img
+                          src="./assets/img/icon/edit-table.svg"
+                          alt="edit"
+                        />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- End Price Tab Detail -->
+
+      <!-- Start Side Bar -->
+      <aside class="price-sidebar scroll">
+        <div class="container">
+          <div class="head">
+            <div class="close">
+              <img src="./assets/img/icon/back-sidebar.svg" alt="back" />
+            </div>
+            <h3 class="title">Price</h3>
+          </div>
+          <form action="" class="body">
+            <!-- Start Inp Area -->
+            <div class="form-group">
+              <h6 class="special-caption">Az</h6>
+              <label for="">Price Type </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group">
+              <h6 class="special-caption">En</h6>
+              <label for="">Price Type </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group">
+              <h6 class="special-caption">Ru</h6>
+              <label for="">Price Type </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">Price </label>
+              <input class="inp" type="number" />
+            </div>
+            <!-- End Inp Area -->
+
+            <!-- Start Form Footer -->
+            <div class="sidebar-form-footer">
+              <button type="submit" class="save">Save</button>
+              <p class="error-text">error</p>
+            </div>
+            <!-- End Form Footer -->
+          </form>
+        </div>
+      </aside>
+      <!-- End Side Bar -->
+
+      <div class="overlay"></div>
+    </main>
+    <!-- My JS -->
+    <script src="./assets/js/detailPriceTab.js"></script>
+    <!-- My JS -->
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@import "../../mixins";
+.diary-sidebar {
+  @include sidebar();
+}
+
+.pdf-area{
+  .container{
+    .row{
+      gap: 2%;
+      .form-group-img {
+        @include form-group-img();
+      }
+    }
+  }
+}

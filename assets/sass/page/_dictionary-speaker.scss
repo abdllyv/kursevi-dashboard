@@ -1,0 +1,39 @@
+@import "../mixins";
+.dictionart-speaker-body {
+  .container {
+    .head {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+      .search-area {
+        input {
+          padding: 7px 14px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #2d334a;
+          outline: none;
+          border-radius: 8px;
+          border: 2px solid #9ba7b6;
+          width: 330px;
+        }
+      }
+      .add {
+        @include btnTypeFirst();
+      }
+    }
+    .table-info {
+      margin: 20px 0;
+      @include table-info();
+    }
+    .pagination {
+      @include pagination();
+    }
+  }
+}
+
+.dictionary-add-sidebar,
+.speaker-add-sidebar {
+  @include sidebar();
+}

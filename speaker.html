@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <h2 class="caption">Speaker</h2>
+          <button class="user-info">
+            <img class="user" src="./assets/img/icon/user.svg" alt="user" />
+            Admin
+            <img
+              class="icon"
+              src="./assets/img/icon/log-out.svg"
+              alt="logout"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main SideBar -->
+    <aside class="main-sidebar">
+      <a class="logo">
+        <img src="./assets/img/Kurs evi logo.svg" alt="logo" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link" href="">Konfrans</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Kurs</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="link active" href="">Speaker</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Dictionary</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Main SideBar -->
+
+    <main>
+      <section class="dictionart-speaker-body">
+        <div class="container">
+          <div class="head">
+            <button class="add">Add a speaker</button>
+            <form action="" class="search-area">
+              <input type="text" name="" id="" placeholder="Search" />
+            </form>
+          </div>
+          <div class="table-info">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="first">ID</th>
+                  <th class="second">Speaker Name</th>
+                  <th class="edit">Edit && Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="first">12</td>
+                  <td class="second">Name</td>
+
+                  <td class="edit">
+                    <div class="btn-area">
+                      <button>
+                        <img
+                          src="./assets/img/icon/trash-table.svg"
+                          alt="delete"
+                        />
+                      </button>
+                      <button>
+                        <img
+                          src="./assets/img/icon/edit-table.svg"
+                          alt="edit"
+                        />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <button class="btn prev" disabled>
+              <img
+                class="prev-icon"
+                src="./assets/img/icon/prev.svg"
+                alt="prev"
+              />
+            </button>
+            <button class="btn prev-number">1</button>
+            <button class="btn active">2</button>
+            <button class="btn next-number">3</button>
+
+            <button class="btn next">
+              <img
+                class="next-icon"
+                src="./assets/img/icon/next.svg"
+                alt="prev"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Add Side Bar -->
+      <aside class="speaker-add-sidebar scroll">
+        <div class="container">
+          <div class="head">
+            <div class="close" id="participant-add-close">
+              <img src="./assets/img/icon/back-sidebar.svg" alt="back" />
+            </div>
+            <h3 class="title">Speaker</h3>
+          </div>
+          <form action="" class="body">
+            <!-- Start Main Info Area -->
+            <div class="form-group">
+              <label for="">Name </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">Surname </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">Fin </label>
+              <input class="inp" type="text" />
+            </div>
+            <!-- End Main Info Area -->
+
+            <!-- Start Select Area -->
+            <div class="form-group-select">
+              <div class="select-label">Position</div>
+              <div class="select">
+                <span
+                  onclick="openSelect(event, 'position')"
+                  class="select-title"
+                  ><span class="text" id="select-first-text">Seç</span>
+                  <div class="icon">
+                    <img
+                      src="./assets/img/icon/arrow-down.svg"
+                      alt="open-close"
+                    />
+                  </div>
+                </span>
+                <ul class="select-list" id="position">
+                  <li class="select-item">Qeyri-tibb işçilər</li>
+                  <li class="select-item">-tibb işçilər</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-group-select">
+              <div class="select-label">Workplace</div>
+              <div class="select">
+                <span
+                  onclick="openSelect(event, 'workplace')"
+                  class="select-title"
+                  ><span class="text" id="select-first-text">Seç</span>
+                  <div class="icon">
+                    <img
+                      src="./assets/img/icon/arrow-down.svg"
+                      alt="open-close"
+                    />
+                  </div>
+                </span>
+                <ul class="select-list" id="workplace">
+                  <li class="select-item">Qeyri-tibb işçilər</li>
+                  <li class="select-item">-tibb işçilər</li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Select Area -->
+
+            <!-- Start Detail -->
+            <div class="form-group-detail">
+              <h5 class="special-caption">Az</h5>
+              <label for=""> About </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+            <div class="form-group-detail">
+              <h5 class="special-caption">en</h5>
+              <label for=""> About </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+            <div class="form-group-detail">
+              <h5 class="special-caption">Ru</h5>
+              <label for=""> About </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+            <!-- End Detail -->
+
+            <!-- Start Social Media -->
+            <div class="form-group">
+              <label for="">Instagram </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">Facebook </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">X </label>
+              <input class="inp" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">Linkedin </label>
+              <input class="inp" type="text" />
+            </div>
+            <!-- End Social Media -->
+
+            <!-- Photo -->
+            <div class="form-group-img">
+                <label class="file-label" for="file-input-1">
+                  <div class="left-side">
+                    <div class="img-content">
+                      <img
+                        class="img"
+                        src="./assets/img/icon/download.svg"
+                        alt="icon"
+                      />
+                      <!-- <div class="img-content">
+                        <img
+                          class="load-img"
+                          src="./assets/img/test-img.jpg"
+                          alt="icon"
+                        />
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h4 class="caption">Veb üçün şəkil seç</h4>
+                    <p class="alert-text">
+                      Img,Wiff...file size no more than 10MB
+                    </p>
+                  </div>
+                  <div class="button-area">
+                    <div class="select">Select</div>
+                    <!-- <button class="delete" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/delete.svg" alt="delete"></button> -->
+                    <!-- <button class="view" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/view.svg" alt="view"></button> -->
+                  </div>
+                </label>
+                <input type="file" id="file-input-1" name="file-input" />
+              </div>
+            <!-- Photo -->
+
+            <!-- Start Form Footer -->
+            <div class="sidebar-form-footer">
+              <button type="submit" class="save">Save</button>
+              <p class="error-text">error</p>
+            </div>
+            <!-- End Form Footer -->
+          </form>
+        </div>
+        <div class="sidebar-overlay"></div>
+      </aside>
+      <!-- End Add Side Bar -->
+
+      <div class="overlay"></div>
+    </main>
+    <!-- My Js -->
+    <script src="./assets/js/speaker.js"></script>
+    <!-- My Js -->
+  </body>
+</html>

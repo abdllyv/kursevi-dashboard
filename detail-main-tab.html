@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <h2 class="caption">İştirakçılar</h2>
+          <button class="user-info">
+            <img class="user" src="./assets/img/icon/user.svg" alt="user" />
+            Admin
+            <img
+              class="icon"
+              src="./assets/img/icon/log-out.svg"
+              alt="logout"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main SideBar -->
+    <aside class="main-sidebar">
+      <a class="logo">
+        <img src="./assets/img/Kurs evi logo.svg" alt="logo" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link">İştirakçılar</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Konfrans</a>
+        </li>
+        <li class="nav-item">
+          <a class="link active" href="">Kurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Partnyor</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Spiker</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Dictionary</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Main SideBar -->
+
+    <main>
+      <!-- Start Tab Section -->
+      <section class="detail-tab">
+        <div class="container">
+          <ul class="tab-list">
+            <li class="tab-item"><a class="tab active" href="">Main</a></li>
+            <li class="tab-item"><a class="tab" href="">İnformation</a></li>
+            <li class="tab-item"><a class="tab" href="">Speaker</a></li>
+            <li class="tab-item"><a class="tab" href="">Diary</a></li>
+            <li class="tab-item"><a class="tab" href="">Participants</a></li>
+            <li class="tab-item"><a class="tab" href="">Price</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Tab Section -->
+
+      <!-- Start Main Tab DEtail Section -->
+      <section class="detail-main-tab-detail">
+        <div class="container">
+          <form class="main-tab-form" id="detail-main-tab">
+            <!-- Start Publish -->
+            <div class="publish-activated-area">
+              <div class="row">
+                <div class="form-group checkbox-group">
+                  <label for="active" class="inp-caption"> Deactive </label>
+                  <label for="active" class="switch">
+                    <input
+                      type="checkbox"
+                      id="active"
+                      name="active"
+                      class="checkbox"
+                    />
+                    <span class="slider round"></span>
+                  </label>
+                  <label for="active" class="inp-caption"> Active </label>
+                </div>
+              </div>
+            </div>
+            <!-- End Publish -->
+
+            <!-- Start Title Area -->
+            <div class="inp-area">
+              <div class="form-group">
+                <label for="">Name (Az)</label>
+                <input class="inp" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="">Name (En)</label>
+                <input class="inp" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="">Name (Ru)</label>
+                <input class="inp" type="text" />
+              </div>
+            </div>
+            <!-- End Title Area -->
+
+            <!-- Start Description Area -->
+            <div class="form-group-detail">
+              <label for=""> About (Az) </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+            <div class="form-group-detail">
+              <label for=""> About (En) </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+            <div class="form-group-detail">
+              <label for=""> About (ru) </label>
+              <textarea class="scroll" name="" id=""></textarea>
+            </div>
+            <!-- End Description Area -->
+
+            <!-- Start Photo Area -->
+            <div class="photo-area">
+              <div class="form-group-img">
+                <label class="file-label" for="file-input-1">
+                  <div class="left-side">
+                    <div class="img-content">
+                      <img
+                        class="img"
+                        src="./assets/img/icon/download.svg"
+                        alt="icon"
+                      />
+                      <!-- <div class="img-content">
+                        <img
+                          class="load-img"
+                          src="./assets/img/test-img.jpg"
+                          alt="icon"
+                        />
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h4 class="caption">Veb üçün şəkil seç</h4>
+                    <p class="alert-text">
+                      Img,Wiff...file size no more than 10MB
+                    </p>
+                  </div>
+                  <div class="button-area">
+                    <div class="select">Select</div>
+                    <!-- <button class="delete" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/delete.svg" alt="delete"></button> -->
+                    <!-- <button class="view" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/view.svg" alt="view"></button> -->
+                  </div>
+                </label>
+                <input type="file" id="file-input-1" name="file-input" />
+              </div>
+              <div class="form-group-img">
+                <label class="file-label" for="file-input-1">
+                  <div class="left-side">
+                    <!-- <div class="img-content">
+                      <img
+                        class="img"
+                        src="./assets/img/icon/download.svg"
+                        alt="icon"
+                      />
+                    </div> -->
+                    <div class="img-content">
+                      <img
+                        class="load-img"
+                        src="./assets/img/test-img.jpg"
+                        alt="icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="text-area">
+                    <h4 class="caption">Downloaded</h4>
+                    <p class="alert-text">Passport.jpeg</p>
+                  </div>
+                  <div class="button-area">
+                    <div class="select">Change</div>
+                    <button
+                      class="delete"
+                      onclick="event.preventDefault(); event.stopPropagation();"
+                    >
+                      <img src="./assets/img/icon/delete.svg" alt="delete" />
+                    </button>
+                    <button
+                      class="view"
+                      onclick="event.preventDefault(); event.stopPropagation();"
+                    >
+                      <img src="./assets/img/icon/view.svg" alt="view" />
+                    </button>
+                  </div>
+                </label>
+                <input type="file" id="file-input-1" name="file-input" />
+              </div>
+            </div>
+            <!-- End Photo Area -->
+
+            <!-- Start Select Area -->
+            <div class="selected-arae">
+              <div class="form-group-select">
+                <div class="select-label">Kurs vəya konfrans</div>
+                <div class="select">
+                  <span
+                    onclick="openSelect(event, 'category')"
+                    class="select-title"
+                    ><span class="text" id="select-first-text">Seç</span>
+                    <div class="icon">
+                      <img
+                        src="./assets/img/icon/arrow-down.svg"
+                        alt="open-close"
+                      />
+                    </div>
+                  </span>
+                  <ul class="select-list" id="category">
+                    <li class="select-item">Qeyri-tibb işçilər</li>
+                    <li class="select-item">-tibb işçilər</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-group-select">
+                <div class="select-label">Kurs vəya konfrans</div>
+                <div class="select">
+                  <span
+                    onclick="openSelect(event, 'subcategory')"
+                    class="select-title"
+                    ><span class="text" id="select-first-text">Seç</span>
+                    <div class="icon">
+                      <img
+                        src="./assets/img/icon/arrow-down.svg"
+                        alt="open-close"
+                      />
+                    </div>
+                  </span>
+                  <ul class="select-list" id="subcategory">
+                    <li class="select-item">Qeyri-tibb işçilər</li>
+                    <li class="select-item">-tibb işçilər</li>
+                    <li class="select-item">-tibb işçilər</li>
+                    <li class="select-item">-tibb işçilər</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End Select Area -->
+
+            <!-- Start Form Footer -->
+            <div class="form-footer">
+              <button type="submit" class="save">Save</button>
+            </div>
+            <!-- End Form Footer -->
+          </form>
+        </div>
+      </section>
+      <!-- End Main Tab DEtail Section -->
+
+      <div class="overlay"></div>
+    </main>
+    <!-- My JS -->
+    <script src="./assets/js/detailMainTab.js"></script>
+    <!-- My JS -->
+  </body>
+</html>

@@ -1,0 +1,41 @@
+@import "../mixins";
+header,
+main {
+  margin-left: 0px;
+}
+
+.login-header {
+  .container {
+    .logo {
+      margin: 11px 0;
+    }
+  }
+}
+.login {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  form {
+    width: 480px;
+    padding: 40px;
+    box-shadow: 0px 0px 4px 0px #414d5c33;
+    border-radius: 16px;
+    box-shadow: 0px 1px 14px 0px #00071624;
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      color: #2d334a;
+    }
+    .form-group {
+      margin-top: 20px;
+      @include formGroup();
+    }
+    .form-footer {
+      @include form-footer();
+      margin: 20px 0 0;
+    }
+  }
+}

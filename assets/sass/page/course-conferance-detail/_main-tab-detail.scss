@@ -1,0 +1,48 @@
+@import "../../mixins";
+.detail-main-tab-detail {
+  .container {
+    .main-tab-form {
+      .publish-activated-area {
+        margin-bottom: 20px;
+
+        .row {
+          justify-content: flex-end;
+          .checkbox-group {
+            @include onOffCheckboxBtn();
+            width: max-content;
+          }
+        }
+      }
+      .inp-area {
+        display: flex;
+        gap: 2%;
+        .form-group {
+          @include formGroup();
+          width: 33%;
+        }
+      }
+      .form-group-detail {
+        margin-top: 10px;
+        @include form-group-detail();
+      }
+      .photo-area {
+        display: flex;
+        gap: 2%;
+        margin: 10px 0;
+        .form-group-img {
+          @include form-group-img();
+        }
+      }
+      .selected-arae {
+        display: flex;
+        gap: 2%;
+        .form-group-select {
+          @include form-group-select();
+        }
+      }
+      .form-footer {
+        @include form-footer();
+      }
+    }
+  }
+}

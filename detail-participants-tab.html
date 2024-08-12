@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <h2 class="caption">Participants</h2>
+          <button class="user-info">
+            <img class="user" src="./assets/img/icon/user.svg" alt="user" />
+            Admin
+            <img
+              class="icon"
+              src="./assets/img/icon/log-out.svg"
+              alt="logout"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main SideBar -->
+    <aside class="main-sidebar">
+      <a class="logo">
+        <img src="./assets/img/Kurs evi logo.svg" alt="logo" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link">İştirakçılar</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Konfrans</a>
+        </li>
+        <li class="nav-item">
+          <a class="link active" href="">Kurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Partnyor</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Spiker</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Dictionary</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Main SideBar -->
+
+    <main>
+      <!-- Start Tab Section -->
+      <section class="detail-tab">
+        <div class="container">
+          <ul class="tab-list">
+            <li class="tab-item"><a class="tab" href="">Main</a></li>
+            <li class="tab-item"><a class="tab" href="">İnformation</a></li>
+            <li class="tab-item"><a class="tab" href="">Speaker</a></li>
+            <li class="tab-item"><a class="tab" href="">Diary</a></li>
+            <li class="tab-item">
+              <a class="tab active" href="">Participants</a>
+            </li>
+            <li class="tab-item"><a class="tab" href="">Price</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Tab Section -->
+
+      <!-- Start Price Tab Detail -->
+      <section class="course-conferance-body">
+        <div class="container">
+          <button class="add">Add participant</button>
+          <div class="table-info">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="first">ID</th>
+                  <th class="second">Name</th>
+                  <th class="second">Email</th>
+                  <th class="second">Registration date</th>
+                  <th class="second">Status</th>
+                  <th class="edit">Edit && Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="first">12</td>
+                  <td class="second">Name</td>
+                  <td class="second">mail@mail.com</td>
+                  <td class="second">12.12.2023</td>
+                  <td class="second">Qüvvədə</td>
+
+                  <td class="edit">
+                    <div class="btn-area">
+                      <button>
+                        <img
+                          src="./assets/img/icon/trash-table.svg"
+                          alt="delete"
+                        />
+                      </button>
+                      <button class="edit-btn-table" >
+                        <img
+                          src="./assets/img/icon/edit-table.svg"
+                          alt="edit"
+                        />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <button class="btn prev" disabled>
+              <img
+                class="prev-icon"
+                src="./assets/img/icon/prev.svg"
+                alt="prev"
+              />
+            </button>
+            <button class="btn prev-number">1</button>
+            <button class="btn active">2</button>
+            <button class="btn next-number">3</button>
+
+            <button class="btn next">
+              <img
+                class="next-icon"
+                src="./assets/img/icon/next.svg"
+                alt="prev"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- End Price Tab Detail -->
+
+      <!-- Start Add Side Bar -->
+      <aside class="participant-add-sidebar scroll">
+        <div class="container">
+          <div class="head">
+            <div class="close" id="participant-add-close">
+              <img src="./assets/img/icon/back-sidebar.svg" alt="back" />
+            </div>
+            <h3 class="title">Price</h3>
+          </div>
+          <form action="" class="body">
+            <!-- Start Inp Area -->
+            <div class="form-group">
+              <label for="">Mail </label>
+              <input class="inp" type="mail" />
+            </div>
+            <!-- End Inp Area -->
+
+            <!-- Start Select Area -->
+            <div class="form-group-select">
+              <div class="select-label">Status</div>
+              <div class="select">
+                <span onclick="openSelect(event, 'status')" class="select-title"
+                  ><span class="text" id="select-first-text">Seç</span>
+                  <div class="icon">
+                    <img
+                      src="./assets/img/icon/arrow-down.svg"
+                      alt="open-close"
+                    />
+                  </div>
+                </span>
+                <ul class="select-list" id="status">
+                  <li class="select-item">Qeyri-tibb işçilər</li>
+                  <li class="select-item">-tibb işçilər</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-group-select">
+              <div class="select-label">Type</div>
+              <div class="select">
+                <span onclick="openSelect(event, 'type')" class="select-title"
+                  ><span class="text" id="select-first-text">Seç</span>
+                  <div class="icon">
+                    <img
+                      src="./assets/img/icon/arrow-down.svg"
+                      alt="open-close"
+                    />
+                  </div>
+                </span>
+                <ul class="select-list" id="type">
+                  <li class="select-item">Qeyri-tibb işçilər</li>
+                  <li class="select-item">-tibb işçilər</li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Select Area -->
+
+            <!-- Start Form Footer -->
+            <div class="sidebar-form-footer">
+              <button type="submit" class="save">Save</button>
+              <p class="error-text">error</p>
+            </div>
+            <!-- End Form Footer -->
+          </form>
+        </div>
+        <div class="sidebar-overlay"></div>
+      </aside>
+      <!-- End Add Side Bar -->
+
+      <!-- Start Info  Side Bar --> 
+      <aside class="participant-info-sidebar scroll">
+        <div class="container">
+          <div class="head">
+            <div class="close" id="participant-info-close">
+              <img src="./assets/img/icon/back-sidebar.svg" alt="back" />
+            </div>
+            <h3 class="title">Participant Info</h3>
+          </div>
+          <div class="table-body">
+            <table class="vertical-table">
+              <tr>
+                <th>ID</th>
+                <td>12</td>
+              </tr>
+              <tr>
+                <th>Name</th>
+                <td>Name</td>
+              </tr>
+              <tr>
+                <th>User type</th>
+                <td>User type</td>
+              </tr>
+              <tr>
+                <th>Personal Id (Ş.v. seriya)</th>
+                <td>Personal Id (Ş.v. seriya)</td>
+              </tr>
+              <tr>
+                <th>Phone</th>
+                <td>Phone</td>
+              </tr>
+              <tr>
+                <th>Mail</th>
+                <td>Mail</td>
+              </tr>
+              <tr>
+                <th>Workplace</th>
+                <td>Workplace</td>
+              </tr>
+              <tr>
+                <th>Specialization</th>
+                <td>Specialization</td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Type</td>
+              </tr>
+              <tr>
+                <th>Registration date</th>
+                <td>Registration date</td>
+              </tr>
+              <tr>
+                <th>Pan</th>
+                <td>Pan</td>
+              </tr>
+              <tr>
+                <th>1-st reg</th>
+                <td>1-st reg</td>
+              </tr>
+              <tr>
+                <th>2-st reg</th>
+                <td>2-st reg</td>
+              </tr>
+              <tr>
+                <th>Added manual</th>
+                <td>Added manual</td>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <td>Status</td>
+              </tr>
+              <tr>
+                <th>Price</th>
+                <td>Price</td>
+              </tr>
+              <tr>
+                <th>PDF</th>
+                <td><a href="" download>Download</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="sidebar-overlay"></div>
+      </aside>
+      <!-- End  Info Side Bar -->
+
+      <div class="overlay"></div>
+    </main>
+    <!-- My JS -->
+    <script src="./assets/js/detailParticipantTab.js"></script>
+    <!-- My JS -->
+  </body>
+</html>

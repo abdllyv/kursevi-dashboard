@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <h2 class="caption">İnformation</h2>
+          <button class="user-info">
+            <img class="user" src="./assets/img/icon/user.svg" alt="user" />
+            Admin
+            <img
+              class="icon"
+              src="./assets/img/icon/log-out.svg"
+              alt="logout"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main SideBar -->
+    <aside class="main-sidebar">
+      <a class="logo">
+        <img src="./assets/img/Kurs evi logo.svg" alt="logo" />
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link">İştirakçılar</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Konfrans</a>
+        </li>
+        <li class="nav-item">
+          <a class="link active" href="">Kurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Partnyor</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Spiker</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="">Dictionary</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Main SideBar -->
+
+    <main>
+      <!-- Start Tab Section -->
+      <section class="detail-tab">
+        <div class="container">
+          <ul class="tab-list">
+            <li class="tab-item"><a class="tab" href="">Main</a></li>
+            <li class="tab-item">
+              <a class="tab active" href="">İnformation</a>
+            </li>
+            <li class="tab-item"><a class="tab" href="">Speaker</a></li>
+            <li class="tab-item"><a class="tab" href="">Diary</a></li>
+            <li class="tab-item"><a class="tab" href="">Participants</a></li>
+            <li class="tab-item"><a class="tab" href="">Price</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Tab Section -->
+
+      <!-- Start Main Tab DEtail Section -->
+      <section class="detail-information-tab-detail">
+        <div class="container">
+          <form class="main-tab-form" id="detail-information-tab">
+            <!-- Start Title Area -->
+            <div class="inp-area">
+              <div class="form-group">
+                <label for="">Start Date</label>
+                <input type="datetime-local" id="datetime" name="datetime" />
+              </div>
+              <div class="form-group">
+                <label for="">End Date</label>
+                <input type="datetime-local" id="datetime" name="datetime" />
+              </div>
+              <div class="form-group">
+                <label for="">Number of participants</label>
+                <input class="inp" type="number" />
+              </div>
+            </div>
+            <!-- End Title Area -->
+
+            <!-- Start Select Area -->
+            <div class="form-group-select">
+              <div class="select-label">Location</div>
+              <div class="select">
+                <span
+                  onclick="openSelect(event, 'location')"
+                  class="select-title"
+                  ><span class="text" id="select-first-text">Seç</span>
+                  <div class="icon">
+                    <img
+                      src="./assets/img/icon/arrow-down.svg"
+                      alt="open-close"
+                    />
+                  </div>
+                </span>
+                <ul class="select-list" id="location">
+                  <li class="select-item">Qeyri-tibb işçilər</li>
+                  <li class="select-item">-tibb işçilər</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-group-select">
+              <div class="select-label">Language</div>
+              <div class="select">
+                <span
+                  onclick="openSelect(event, 'language')"
+                  class="select-title"
+                  ><span class="text" id="select-first-text">Seç</span>
+                  <div class="icon">
+                    <img
+                      src="./assets/img/icon/arrow-down.svg"
+                      alt="open-close"
+                    />
+                  </div>
+                </span>
+                <ul class="select-list" id="language">
+                  <li class="select-item">Qeyri-tibb işçilər</li>
+                  <li class="select-item">-tibb işçilər</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-group-select">
+              <div class="select-label">Terms of participation</div>
+              <div class="select">
+                <span
+                  onclick="openSelect(event, 'participation')"
+                  class="select-title"
+                  ><span class="text" id="select-first-text">Seç</span>
+                  <div class="icon">
+                    <img
+                      src="./assets/img/icon/arrow-down.svg"
+                      alt="open-close"
+                    />
+                  </div>
+                </span>
+                <ul class="select-list" id="participation">
+                  <li class="select-item">Qeyri-tibb işçilər</li>
+                  <li class="select-item">-tibb işçilər</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- End Select Area -->
+
+            <!-- Start Form Footer -->
+            <div class="form-footer">
+              <button type="submit" class="save">Save</button>
+            </div>
+            <!-- End Form Footer -->
+          </form>
+        </div>
+      </section>
+      <!-- End Main Tab DEtail Section -->
+
+      <div class="overlay"></div>
+    </main>
+    <!-- My Js -->
+     <script src="./assets/js/detailİnformationTab.js"></script>
+    <!-- My Js -->
+  </body>
+</html>

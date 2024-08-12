@@ -1,0 +1,16 @@
+@import "../mixins";
+.course-conferance-body {
+  .container {
+    .add {
+      @include btnTypeFirst();
+      margin-top: 30px;
+    }
+    .table-info {
+      margin: 20px 0;
+      @include table-info();
+    }
+    .pagination {
+      @include pagination();
+    }
+  }
+}

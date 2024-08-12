@@ -1,0 +1,4 @@
+@import "../../mixins";
+.price-sidebar {
+  @include sidebar();
+}
