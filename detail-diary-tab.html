@@ -32,22 +32,16 @@
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="link">İştirakçılar</a>
+          <a class="link" href="./course.html">Conference</a>
         </li>
         <li class="nav-item">
-          <a class="link" href="">Konfrans</a>
+          <a class="link active" href="./course.html">Course</a>
         </li>
         <li class="nav-item">
-          <a class="link active" href="">Kurs</a>
+          <a class="link" href="./speaker.html">Spiker</a>
         </li>
         <li class="nav-item">
-          <a class="link" href="">Partnyor</a>
-        </li>
-        <li class="nav-item">
-          <a class="link" href="">Spiker</a>
-        </li>
-        <li class="nav-item">
-          <a class="link" href="">Dictionary</a>
+          <a class="link" href="./dictionary.html">Dictionary</a>
         </li>
       </ul>
     </aside>
@@ -58,12 +52,12 @@
       <section class="detail-tab">
         <div class="container">
           <ul class="tab-list">
-            <li class="tab-item"><a class="tab" href="">Main</a></li>
-            <li class="tab-item"><a class="tab" href="">İnformation</a></li>
-            <li class="tab-item"><a class="tab" href="">Speaker</a></li>
-            <li class="tab-item"><a class="tab active" href="">Diary</a></li>
-            <li class="tab-item"><a class="tab" href="">Participants</a></li>
-            <li class="tab-item"><a class="tab" href="">Price</a></li>
+            <li class="tab-item"><a class="tab" href="./detail-main-tab.html">Main</a></li>
+            <li class="tab-item"><a class="tab" href="./detail-information-tab.html">İnformation</a></li>
+            <li class="tab-item"><a class="tab" href="./detail-speaker-tab.html">Speaker</a></li>
+            <li class="tab-item"><a class="tab active" href="./detail-diary-tab.html">Diary</a></li>
+            <li class="tab-item"><a class="tab" href="./detail-participants-tab.html">Participants</a></li>
+            <li class="tab-item"><a class="tab" href="./detail-price-tab.html">Price</a></li>
           </ul>
         </div>
       </section>
@@ -79,7 +73,7 @@
                 <div class="left-side">
                   <div class="img-content">
                     <img
-                      class="img"
+                      class="load-img"
                       src="./assets/img/icon/download.svg"
                       alt="icon"
                     />
@@ -91,8 +85,12 @@
                 </div>
                 <div class="button-area">
                   <div class="select">Select</div>
-                  <!-- <button class="delete" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/delete.svg" alt="delete"></button> -->
-                  <!-- <button class="view" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/view.svg" alt="view"></button> -->
+                  <button class="delete" onclick="resetFileInput(event);">
+                    <img src="./assets/img/icon/delete.svg" alt="delete" />
+                  </button>
+                  <button class="view" onclick="viewPdf(event);">
+                    <img src="./assets/img/icon/view.svg" alt="view" />
+                  </button>
                 </div>
               </label>
               <input type="file" id="file-input-1" name="file-input" />
@@ -103,7 +101,7 @@
                 <div class="left-side">
                   <div class="img-content">
                     <img
-                      class="img"
+                      class="load-img"
                       src="./assets/img/icon/download.svg"
                       alt="icon"
                     />
@@ -115,8 +113,12 @@
                 </div>
                 <div class="button-area">
                   <div class="select">Select</div>
-                  <!-- <button class="delete" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/delete.svg" alt="delete"></button> -->
-                  <!-- <button class="view" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/view.svg" alt="view"></button> -->
+                  <button class="delete" onclick="resetFileInput(event);">
+                    <img src="./assets/img/icon/delete.svg" alt="delete" />
+                  </button>
+                  <button class="view" onclick="viewPdf(event);">
+                    <img src="./assets/img/icon/view.svg" alt="view" />
+                  </button>
                 </div>
               </label>
               <input type="file" id="file-input-2" name="file-input" />
@@ -127,30 +129,29 @@
                 <div class="left-side">
                   <div class="img-content">
                     <img
-                      class="img"
+                      class="load-img"
                       src="./assets/img/icon/download.svg"
                       alt="icon"
                     />
                   </div>
                 </div>
                 <div class="text-area">
-                  <h4 class="caption">Downloaded</h4>
-                  <p class="alert-text">text.pdf</p>
+                  <h4 class="caption">PDF for diary</h4>
+                  <p class="alert-text">Just downland pdf</p>
                 </div>
                 <div class="button-area">
-                  <div class="select">Change</div>
+                  <div class="select">Select</div>
                   <button
                     class="delete"
                     onclick="event.preventDefault(); event.stopPropagation();"
                   >
                     <img src="./assets/img/icon/delete.svg" alt="delete" />
-                  </button>
-                  <button
-                    class="view"
-                    onclick="event.preventDefault(); event.stopPropagation();"
-                  >
-                    <img src="./assets/img/icon/view.svg" alt="view" />
-                  </button>
+                    <button class="delete" onclick="resetFileInput(event);">
+                      <img src="./assets/img/icon/delete.svg" alt="delete" />
+                    </button>
+                    <button class="view" onclick="viewPdf(event);">
+                      <img src="./assets/img/icon/view.svg" alt="view" />
+                    </button>
                 </div>
               </label>
               <input type="file" id="file-input-3" name="file-input" />

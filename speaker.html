@@ -33,17 +33,16 @@
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="link" href="">Konfrans</a>
+          <a class="link" href="./course.html">Conference</a>
         </li>
         <li class="nav-item">
-          <a class="link" href="">Kurs</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="link active" href="">Speaker</a>
+          <a class="link " href="./course.html">Course</a>
         </li>
         <li class="nav-item">
-          <a class="link" href="">Dictionary</a>
+          <a class="link active" href="./speaker.html">Spiker</a>
+        </li>
+        <li class="nav-item">
+          <a class="link " href="./dictionary.html">Dictionary</a>
         </li>
       </ul>
     </aside>
@@ -222,37 +221,40 @@
 
             <!-- Photo -->
             <div class="form-group-img">
-                <label class="file-label" for="file-input-1">
-                  <div class="left-side">
-                    <div class="img-content">
-                      <img
-                        class="img"
-                        src="./assets/img/icon/download.svg"
-                        alt="icon"
-                      />
-                      <!-- <div class="img-content">
-                        <img
-                          class="load-img"
-                          src="./assets/img/test-img.jpg"
-                          alt="icon"
-                        />
-                      </div> -->
-                    </div>
+              <label class="file-label" for="file-input-1">
+                <div class="left-side">
+                  <div class="img-content">
+                    <img
+                      class="load-img"
+                      src="./assets/img/icon/download.svg"
+                      alt="icon"
+                    />
                   </div>
-                  <div class="text-area">
-                    <h4 class="caption">Veb üçün şəkil seç</h4>
-                    <p class="alert-text">
-                      Img,Wiff...file size no more than 10MB
-                    </p>
-                  </div>
-                  <div class="button-area">
-                    <div class="select">Select</div>
-                    <!-- <button class="delete" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/delete.svg" alt="delete"></button> -->
-                    <!-- <button class="view" onclick="event.preventDefault(); event.stopPropagation();"><img src="./assets/img/icon/view.svg" alt="view"></button> -->
-                  </div>
-                </label>
-                <input type="file" id="file-input-1" name="file-input" />
-              </div>
+                </div>
+                <div class="text-area">
+                  <h4 class="caption">Choose an image for the web</h4>
+                  <p class="alert-text">
+                    Img,Wiff...file size no more than 10MB
+                  </p>
+                </div>
+                <div class="button-area">
+                  <div class="select">Select</div>
+                  <button
+                    class="delete"
+                    onclick="resetFileInput(event);"
+                  >
+                    <img src="./assets/img/icon/delete.svg" alt="delete" />
+                  </button>
+                  <button
+                    class="view"
+                    onclick="viewPhoto(event);"
+                  >
+                    <img src="./assets/img/icon/view.svg" alt="view" />
+                  </button>
+                </div>
+              </label>
+              <input type="file" id="file-input-1" name="file-input" />
+            </div>  
             <!-- Photo -->
 
             <!-- Start Form Footer -->
@@ -266,6 +268,16 @@
         <div class="sidebar-overlay"></div>
       </aside>
       <!-- End Add Side Bar -->
+
+      
+      <!-- Start View Select Photo Section -->
+      <section class="photo-view">
+        <div class="img-box">
+          <img src="./assets/img/test-img.jpg" alt="photo">
+        </div>
+       </section>
+      <!-- End View Select Photo Section -->
+
 
       <div class="overlay"></div>
     </main>

@@ -80,3 +80,100 @@ sidebarOverlay.addEventListener("click", () => {
   sidebarOverlay.classList.remove("isOpen");
   select = false;
 });
+
+/* -------------------------- Native input file JS -------------------------- */
+const fileInput1 = document.getElementById("file-input-1");
+
+let imgInp = [fileInput1];
+const allowedTypes = [
+  "image/jpeg",
+  "image/png",
+  "image/gif",
+  "image/bmp",
+  "image/webp",
+  "image/tiff",
+  "image/svg+xml",
+  "image/x-icon",
+];
+
+for (let i = 0; i < imgInp.length; i++) {
+  imgInp[i].addEventListener("change", () => {
+    if (imgInp[i].files[0]) {
+      const file = imgInp[i].files[0];
+
+      // Dosya türü doğrulaması
+      if (!allowedTypes.includes(file.type)) {
+        // Geçersiz dosya seçimini temizle
+        imgInp[i].parentElement.firstElementChild.style.borderColor = "#ff014f";
+        imgInp[i].value = "";
+        return;
+      }
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        const realPathArray = imgInp[i].value.split("\\");
+        let caption =
+          imgInp[i].previousSibling.previousSibling.children[1].children[0];
+        let fileName =
+          imgInp[i].previousSibling.previousSibling.children[1].children[1];
+        let img =
+          imgInp[i].previousSibling.previousSibling.children[0]
+            .firstElementChild.firstElementChild;
+        let btnGroup = imgInp[i].previousSibling.previousSibling.children[2];
+
+        btnGroup.children[1].classList.add("active");
+        btnGroup.children[2].classList.add("active");
+        img.src = URL.createObjectURL(file);
+        fileName.innerHTML = realPathArray[realPathArray.length - 1];
+        caption.innerText = "Downloaded";
+        btnGroup.firstElementChild.innerText = "Change";
+        imgInp[i].parentElement.firstElementChild.style.borderColor =
+          " #98989e";
+      };
+
+      reader.readAsDataURL(file);
+    }
+  });
+}
+
+/* ------------------------------- Delete Img ------------------------------- */
+function resetFileInput(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  let deleteBtn = event.target;
+  let img =
+    event.target.parentElement.parentElement.parentElement.children[0]
+      .firstElementChild.firstElementChild;
+  let textArea =
+    event.target.parentElement.parentElement.parentElement.children[1];
+  let inp =
+    event.target.parentElement.parentElement.parentElement.nextElementSibling;
+
+  inp.value = "";
+  img.src = "./assets/img/icon/download.svg";
+  textArea.firstElementChild.innerText = "Choose an image for the web";
+  textArea.lastElementChild.innerText =
+    "Img,Wiff...file size no more than 10MB";
+  deleteBtn.parentElement.previousSibling.innerText = "Select";
+  deleteBtn.parentElement.classList.remove("active");
+  deleteBtn.parentElement.nextElementSibling.classList.remove("active");
+}
+
+/* ------------------------------- View Img ------------------------------- */
+let viewSection = document.querySelector(".photo-view");
+console.log(viewSection);
+function viewPhoto(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  let inp =
+    event.target.parentElement.parentElement.parentElement.nextElementSibling;
+
+  viewSection.classList.add("active");
+  viewSection.firstElementChild.firstElementChild.src = URL.createObjectURL(
+    inp.files[0]
+  );
+}
+
+viewSection.addEventListener("click", () => {
+  viewSection.classList.remove("active");
+});

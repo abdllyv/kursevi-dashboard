@@ -217,6 +217,10 @@
         border: none;
         outline: none;
         cursor: pointer;
+        display: none;
+        &.active{
+          display: flex;
+        }
       }
     }
   }
