@@ -249,6 +249,7 @@ function resetError() {
 // resetError();
 
 let formAbstract = document.querySelector("#detail-main-tab");
+let publish=document.querySelector(".checkbox")
 formAbstract.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -298,10 +299,10 @@ formAbstract.addEventListener("submit", (event) => {
       isValid = false;
     }
   }
-  console.log(isValid);
+
   if (isValid) {
     /* -------------------------------- SEND DATA ------------------------------- */
-    console.log("t");
+
 
     // Fetch post
 
