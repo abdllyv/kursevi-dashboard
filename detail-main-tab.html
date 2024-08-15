@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/sass/main.css" />
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Sweet Alert -->
   </head>
   <body>
     <!-- Start Header -->
@@ -53,12 +57,28 @@
       <section class="detail-tab">
         <div class="container">
           <ul class="tab-list">
-            <li class="tab-item"><a class="tab active" href="./detail-main-tab.html">Main</a></li>
-            <li class="tab-item"><a class="tab " href="./detail-information-tab.html">İnformation</a></li>
-            <li class="tab-item"><a class="tab" href="./detail-speaker-tab.html">Speaker</a></li>
-            <li class="tab-item"><a class="tab " href="./detail-diary-tab.html">Diary</a></li>
-            <li class="tab-item"><a class="tab" href="./detail-participants-tab.html">Participants</a></li>
-            <li class="tab-item"><a class="tab" href="./detail-price-tab.html">Price</a></li>
+            <li class="tab-item">
+              <a class="tab active" href="./detail-main-tab.html">Main</a>
+            </li>
+            <li class="tab-item">
+              <a class="tab" href="./detail-information-tab.html"
+                >İnformation</a
+              >
+            </li>
+            <li class="tab-item">
+              <a class="tab" href="./detail-speaker-tab.html">Speaker</a>
+            </li>
+            <li class="tab-item">
+              <a class="tab" href="./detail-diary-tab.html">Diary</a>
+            </li>
+            <li class="tab-item">
+              <a class="tab" href="./detail-participants-tab.html"
+                >Participants</a
+              >
+            </li>
+            <li class="tab-item">
+              <a class="tab" href="./detail-price-tab.html">Price</a>
+            </li>
           </ul>
         </div>
       </section>
@@ -141,16 +161,10 @@
                   </div>
                   <div class="button-area">
                     <div class="select">Select</div>
-                    <button
-                      class="delete"
-                      onclick="resetFileInput(event);"
-                    >
+                    <button class="delete" onclick="resetFileInput(event);">
                       <img src="./assets/img/icon/delete.svg" alt="delete" />
                     </button>
-                    <button
-                      class="view"
-                      onclick="viewPhoto(event);"
-                    >
+                    <button class="view" onclick="viewPhoto(event);">
                       <img src="./assets/img/icon/view.svg" alt="view" />
                     </button>
                   </div>
@@ -176,23 +190,16 @@
                   </div>
                   <div class="button-area">
                     <div class="select">Select</div>
-                    <button
-                      class="delete"
-                      onclick="resetFileInput(event);"
-                    >
+                    <button class="delete" onclick="resetFileInput(event);">
                       <img src="./assets/img/icon/delete.svg" alt="delete" />
                     </button>
-                    <button
-                      class="view"
-                      onclick="viewPhoto(event);"
-                    >
+                    <button class="view" onclick="viewPhoto(event);">
                       <img src="./assets/img/icon/view.svg" alt="view" />
                     </button>
                   </div>
                 </label>
                 <input type="file" id="file-input-2" name="file-input" />
               </div>
-     
             </div>
             <!-- End Photo Area -->
 
@@ -253,13 +260,12 @@
       </section>
       <!-- End Main Tab DEtail Section -->
 
-
       <!-- Start View Select Photo Section -->
-       <section class="photo-view">
+      <section class="photo-view">
         <div class="img-box">
-          <img src="./assets/img/test-img.jpg" alt="photo">
+          <img src="./assets/img/test-img.jpg" alt="photo" />
         </div>
-       </section>
+      </section>
       <!-- End View Select Photo Section -->
 
       <div class="overlay"></div>

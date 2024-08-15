@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/sass/main.css" />
+      <!-- Sweet Alert -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!-- Sweet Alert -->
   </head>
   <body>
     <!-- Start Header -->
@@ -86,7 +89,7 @@
 
                   <td class="edit">
                     <div class="btn-area">
-                      <button>
+                      <button onclick="deleteElem(event);">
                         <img
                           src="./assets/img/icon/trash-table.svg"
                           alt="delete"
@@ -108,7 +111,7 @@
 
                   <td class="edit">
                     <div class="btn-area">
-                      <button>
+                      <button onclick="deleteElem(event);">
                         <img
                           src="./assets/img/icon/trash-table.svg"
                           alt="delete"

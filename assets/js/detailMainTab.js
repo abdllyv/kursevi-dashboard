@@ -191,7 +191,6 @@ function resetFileInput(event) {
 
 /* ------------------------------- View Img ------------------------------- */
 let viewSection = document.querySelector(".photo-view");
-console.log(viewSection);
 function viewPhoto(event) {
   event.preventDefault();
   event.stopPropagation();
@@ -299,27 +298,30 @@ formAbstract.addEventListener("submit", (event) => {
       isValid = false;
     }
   }
-
+  console.log(isValid);
   if (isValid) {
-    console.log("t");
     /* -------------------------------- SEND DATA ------------------------------- */
-    if (event.submitter.id === "btnSend") {
-      //   axios
-      //     .post("http://localhost:5000/api/products", formData)
-      //     .then((res) => {
-      //       if (res) {
-      //         Swal.fire({
-      //           position: "center",
-      //           icon: "success",
-      //           showConfirmButton: false,
-      //           timer: 1000,
-      //         });
-      //       }
-      //     })
-      //     .catch((err) => console.log(err.message));
-      // } else if (event.submitter.id === "btnSave") {
-      //   console.log("btnSave");
-      // }
-    }
+    console.log("t");
+
+    // Fetch post
+
+    Swal.fire({
+      title: "Data Saved!",
+      icon: "warning",
+      showCancelButton: false,
+      showConfirmButton: false,
+      // confirmButtonColor: "#3085d6",
+      // cancelButtonColor: "#d33",
+      // confirmButtonText: "Yes, delete it!",
+      // cancelButtonText: "No, cancel!",
+      customClass: {
+        popup: "sweet-pop-content",
+        title: "sweet-title",
+        icon: "sweet-icon-handle",
+        actions: "sweet-alert-action-area",
+        confirmButton: "sweet-btn-confirm",
+        cancelButton: "sweet-btn-cancel",
+      },
+    });
   }
 });

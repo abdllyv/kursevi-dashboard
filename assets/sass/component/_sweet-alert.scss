@@ -1,0 +1,66 @@
+.sweet-title {
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0f172a;
+}
+.sweet-pop-content{
+    border-radius: 15px;
+}
+.sweet-icon-handle {
+  background: #e9e9ea;
+  margin-top: 20px;
+  &:where(.swal2-icon).swal2-warning {
+    color: #1e1e2c;
+    border-color: #1e1e2c;
+  }
+  &:where(.swal2-icon){
+    width: 4.5em;
+    height: 4.5em;
+  }
+}
+.sweet-alert-action-area {
+  margin-top: 0;
+  width: 100%;
+  padding: 0 20px;
+  justify-content: flex-end;
+}
+.sweet-btn-confirm,
+.sweet-btn-cancel {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  margin: 0px 10px !important;
+  border: 1px solid #3a3089 !important;
+  border-radius: 8px;
+
+  outline: none !important;
+}
+.sweet-btn-confirm {
+  background-color: #3a3089 !important;
+  color: #fff;
+  transition: 0.3s ease;
+  box-shadow: none !important;
+  &:hover {
+    background-color: #fff !important;
+    background-image: none !important;
+    color: #3a3089;
+  }
+}
+.sweet-btn-cancel {
+  background-color: #fff !important;
+  color: #3a3089;
+  border-color: transparent !important;
+  background-image: none;
+  transition: 0.3s ease;
+  &:hover {
+    border-color: #3a3089;
+    // color: #fff;
+    background-color: #d4d0f6 !important;
+  }
+}
